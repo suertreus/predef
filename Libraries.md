@@ -126,6 +126,22 @@ Version|`_LIBCPP_ABI_VERSION`|V|V = ABI Version
 
 ## Other Libraries ##
 
+### [Boost](https://www.boost.org/) ###
+
+Type|Macro|Format|Description
+---|---|---|---
+Version|`BOOST_VERSION`|VVRRPP|VV = Version<br/>RR = Revision<br/>PP = Patch<br/><br/>Must be included from `<boost/version.hpp>`
+Version|`BOOST_LIB_VERSION`|"V_R[_P]"|V = Version<br/>R = Revision<br/>P = Patch (absent if 0)<br/><br/>Must be included from `<boost/version.hpp>`
+
+##### Example #####
+
+Boost|`BOOST_VERSION`|`BOOST_LIB_VERSION`
+---|---|---
+1.84|108400|"1_84"
+1.46.1|104601|"1_46_1"
+
+For more information see [the header doc](https://www.boost.org/doc/libs/1_83_0/boost/version.hpp)
+
 ### [Microsoft Foundation Classes](http://en.wikipedia.org/wiki/Microsoft_Foundation_Classes) ###
 
 Type|Macro|Format|Description
